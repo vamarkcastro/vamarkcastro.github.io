@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Castro | General Virtual Assistant</title>
+<meta name="description" content="Mark Castro — professional General Virtual Assistant offering administrative, research, digital organization and remote business support.">
+<style>
+:root{--bg:#050b18;--bg2:#09142b;--card:rgba(17,31,59,.72);--text:#f7f9ff;--muted:#a9b6d0;--blue:#4f8cff;--cyan:#63e6d2;--gold:#e7b95e;--line:rgba(255,255,255,.11);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 5%,#173c8255,transparent 28%),linear-gradient(180deg,var(--bg),#071128 55%,#050b18);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),92%);margin:auto}
+nav{position:sticky;top:0;z-index:30;background:rgba(5,11,24,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:950;letter-spacing:-.05em;font-size:20px}.brand span{color:var(--blue)}.links{display:flex;gap:25px;color:var(--muted);font-size:13px;font-weight:700}.links a:hover{color:white}.navcta{padding:10px 16px;border:1px solid #4f8cff66;border-radius:10px;color:#dce8ff;background:#4f8cff18}
+.hero{padding:90px 0 80px;min-height:700px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:65px;align-items:center}.pill{display:inline-flex;gap:9px;align-items:center;border:1px solid #4f8cff55;background:#4f8cff12;color:#dbe7ff;padding:8px 13px;border-radius:999px;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:900}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 15px var(--cyan)}
+h1{font-size:clamp(48px,7vw,82px);line-height:.95;letter-spacing:-.075em;margin:24px 0}.gradient{background:linear-gradient(100deg,#fff 20%,#7faeff 58%,#68e3d0);color:transparent;background-clip:text}.lead{font-size:18px;color:var(--muted);max-width:690px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 19px;border-radius:11px;border:1px solid var(--line);font-size:13px;font-weight:900}.primary{background:linear-gradient(135deg,#5b91ff,#3568e9);box-shadow:0 12px 35px #3568e933}.secondary{background:#ffffff08}
+.hero-card{position:relative;border:1px solid #4f8cff55;border-radius:30px;background:linear-gradient(145deg,#142b50aa,#08142be8);padding:20px;box-shadow:0 30px 80px #00000055}.hero-card:before{content:"";position:absolute;inset:-1px;border-radius:30px;padding:1px;background:linear-gradient(135deg,#4f8cff66,transparent,#63e6d244);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.hero-card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;border-radius:22px}.profile{padding:20px 6px 4px}.profile small{color:var(--gold);letter-spacing:.12em;font-size:10px;font-weight:900}.profile h2{font-size:28px;margin:5px 0}.profile p{color:var(--muted);margin:0}.contactline{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px;color:#c8d5ed;font-size:12px}
+section{padding:88px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--gold);font-size:11px;font-weight:950;letter-spacing:.16em;text-transform:uppercase}h2{font-size:clamp(32px,4vw,52px);line-height:1.05;letter-spacing:-.06em;margin:10px 0 14px}.intro{max-width:720px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}.card{background:linear-gradient(145deg,#102344aa,#0b1830aa);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#4f8cff66;box-shadow:0 20px 45px #00000022}.icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#4f8cff18;border:1px solid #4f8cff44;color:#83adff;font-weight:900}.card h3{margin:18px 0 7px}.card p{color:var(--muted);font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:55px}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.chip{padding:9px 12px;border:1px solid var(--line);background:#ffffff06;border-radius:9px;color:#dce5f7;font-size:12px;font-weight:750}.steps{display:grid;gap:11px;margin-top:24px}.step{display:flex;gap:14px;padding:16px;background:#ffffff05;border:1px solid var(--line);border-radius:15px}.num{min-width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#4f8cff18;color:#86b0ff;font-weight:900}.step p{margin:2px 0 0;color:var(--muted);font-size:12px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:32px}.project{min-height:240px;border:1px solid var(--line);border-radius:21px;background:linear-gradient(145deg,#102344,#09152c);padding:23px;position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:150px;height:150px;right:-55px;top:-55px;border-radius:50%;background:#4f8cff18}.project small{color:var(--cyan);font-weight:900;letter-spacing:.1em}.project h3{margin-top:45px}.project p{color:var(--muted);font-size:13px}
+.quote{margin-top:35px;padding:28px;border:1px solid #4f8cff44;background:#4f8cff0b;border-radius:18px;color:#dce5f7}.quote strong{color:white}
+.contact{padding:75px 30px;text-align:center;border:1px solid #4f8cff44;border-radius:28px;background:radial-gradient(circle at 50% 0,#2859b744,transparent 50%),#0a1831}.contact p{max-width:650px;margin:0 auto;color:var(--muted)}.email{display:inline-block;margin-top:25px;padding:14px 21px;border-radius:11px;background:white;color:#071128;font-weight:950}
+footer{text-align:center;color:#7787a5;padding:28px;font-size:11px;border-top:1px solid var(--line)}
+@media(max-width:850px){.links{display:none}.hero{padding-top:65px}.hero-grid,.two{grid-template-columns:1fr}.cards,.projects{grid-template-columns:1fr}.hero-card{max-width:480px;margin:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="brand" href="#home">MC <span>MARK CASTRO</span></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></div><a class="navcta" href="mailto:VAmarkcastro@gmail.com">Hire Me →</a></div></nav>
+
+<main id="home">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="pill"><span class="dot"></span> General Virtual Assistant · Open to Remote Work</span>
+<h1>Your <span class="gradient">reliable</span><br>extra pair of hands.</h1>
+<p class="lead">I'm <strong>Mark Castro</strong>. I help busy entrepreneurs and businesses stay organized, handle day-to-day tasks, and create more room for the work that matters.</p>
+<div class="actions"><a class="btn primary" href="mailto:VAmarkcastro@gmail.com">Hire Me →</a><a class="btn secondary" href="#work">View Sample Work</a></div>
+</div>
+<div class="hero-card"><img src="mark-castro-portrait.png" alt="Mark Castro professional portrait"><div class="profile"><small>GENERAL VIRTUAL ASSISTANT</small><h2>Mark Castro</h2><p>Mark Kevin Castro · Philippines</p><div class="contactline"><span>✉ VAmarkcastro@gmail.com</span><span>☎ +63 952 475 4839</span></div></div></div>
+</div></section>
+
+<section id="about"><div class="wrap two"><div><span class="eyebrow">About me</span><h2>Professional mindset. Genuine work ethic.</h2></div><div><p class="intro">I'm a motivated General Virtual Assistant based in the Philippines. While I'm new to the professional VA industry, I bring strong attention to detail, a willingness to learn, dependable communication, and a serious commitment to doing work correctly.</p><p class="intro">My goal is simple: make your workload easier, keep tasks organized, and become a dependable part of your workflow.</p><div class="quote">“I may be new to the industry, but I am <strong>ready to learn, ready to work, and ready to earn your trust.</strong>”</div></div></div></section>
+
+<section id="services"><div class="wrap"><span class="eyebrow">Services</span><h2>Support that keeps<br>your business moving.</h2><p class="intro">Practical remote assistance for recurring tasks, organization, communication, and digital operations.</p><div class="cards">
+<div class="card"><div class="icon">✦</div><h3>Administrative Support</h3><p>Data entry, document formatting, file organization, task tracking, and routine admin work.</p></div>
+<div class="card"><div class="icon">✉</div><h3>Email Management</h3><p>Inbox organization, sorting, follow-ups, and professional email support.</p></div>
+<div class="card"><div class="icon">◷</div><h3>Calendar Management</h3><p>Scheduling, reminders, appointment coordination, and calendar organization.</p></div>
+<div class="card"><div class="icon">⌕</div><h3>Research & Data</h3><p>Web research, data collection, spreadsheet updates, and organized summaries.</p></div>
+<div class="card"><div class="icon">◌</div><h3>Customer Support</h3><p>Professional communication, inquiry handling, follow-ups, and information management.</p></div>
+<div class="card"><div class="icon">↗</div><h3>Social Media Assistance</h3><p>Content organization, scheduling support, Canva graphics, and content calendars.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap two"><div><span class="eyebrow">Skills & tools</span><h2>A practical digital toolkit.</h2><p class="intro">Tools and capabilities I am prepared to use and continue developing as I support clients.</p><div class="chips">
+<span class="chip">Google Workspace</span><span class="chip">Google Docs</span><span class="chip">Google Sheets</span><span class="chip">Microsoft Word</span><span class="chip">Microsoft Excel</span><span class="chip">Canva</span><span class="chip">Notion</span><span class="chip">Trello</span><span class="chip">Slack</span><span class="chip">Zoom</span><span class="chip">Google Drive</span><span class="chip">AI Tools</span><span class="chip">Data Entry</span><span class="chip">Web Research</span><span class="chip">Email Management</span>
+</div></div>
+<div><span class="eyebrow">Workflow</span><h2>Simple process. Clear communication.</h2><div class="steps">
+<div class="step"><div class="num">01</div><div><b>Understand</b><p>Clarify the objective, priority, deadline, and preferred process.</p></div></div>
+<div class="step"><div class="num">02</div><div><b>Organize</b><p>Break the work into clear actions and keep information easy to find.</p></div></div>
+<div class="step"><div class="num">03</div><div><b>Execute</b><p>Complete tasks carefully and communicate progress when needed.</p></div></div>
+<div class="step"><div class="num">04</div><div><b>Deliver</b><p>Review details, meet the deadline, and leave everything organized.</p></div></div>
+</div></div></div></section>
+
+<section id="work"><div class="wrap"><span class="eyebrow">Sample portfolio</span><h2>See what I can build for you.</h2><p class="intro">These are practice samples created to demonstrate capability. They are not presented as previous client work.</p><div class="projects">
+<div class="project"><small>ADMIN · SAMPLE 01</small><h3>Weekly Operations Dashboard</h3><p>A clean tracker for priorities, deadlines, status updates, and follow-ups.</p></div>
+<div class="project"><small>RESEARCH · SAMPLE 02</small><h3>Lead Research Brief</h3><p>A structured format for gathering prospect information and turning it into an easy-to-use summary.</p></div>
+<div class="project"><small>CONTENT · SAMPLE 03</small><h3>30-Day Content Calendar</h3><p>A practical planning system for topics, captions, dates, and publishing status.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact"><span class="eyebrow">Let's work together</span><h2>Ready to make your workload lighter?</h2><p>If you're looking for a dependable General VA who is organized, motivated, and ready to learn your workflow, I'd love to hear from you.</p><a class="email" href="mailto:VAmarkcastro@gmail.com">VAmarkcastro@gmail.com →</a><p style="margin-top:15px">+63 952 475 4839</p></div></div></section>
+</main>
+<footer>© 2026 Mark Castro · General Virtual Assistant · Philippines</footer>
+</body></html>
